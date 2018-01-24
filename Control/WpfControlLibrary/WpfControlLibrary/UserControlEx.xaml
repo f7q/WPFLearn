@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              d:DesignHeight="300" Width="770.718">
     <Grid Margin="0,0,-16,0">
-        <Button Content="{Binding Text, ElementName=textBox}" HorizontalAlignment="Left" Height="147" Margin="10,74,0,0" VerticalAlignment="Top" Width="139"/>
+        <Button Content="{Binding Path=Text.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="147" Margin="10,74,0,0" VerticalAlignment="Top" Width="139"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="147" Margin="214,74,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="481"/>
 
     </Grid>
