@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Deployment.Application;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Deployment.Application;
 
-namespace WpfApp1
+namespace ViewModel
 {
     public class MainViiewModel
     {
@@ -22,6 +17,14 @@ namespace WpfApp1
                 version.Build.ToString() + "." +
                 version.Revision.ToString()
 　　　　　　    );
+            }
+        }
+
+        public string AsembleyVersion
+        {
+            get
+            {
+                return "0.0.0.0";
             }
         }
     }
